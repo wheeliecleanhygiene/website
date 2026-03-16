@@ -4,28 +4,288 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Wheelie Clean Hygiene</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800;900&display=swap" rel="stylesheet">
 
 <style>
-body {
-  margin: 0;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: #ffffff;
+*{box-sizing:border-box;margin:0;padding:0}
+body{
+  font-family:Inter,system-ui,Arial;
+  background:#f8fdff;
+  color:#0f172a;
+  line-height:1.6;
 }
 
-img {
-  max-width: 400px;
-  width: 80%;
+.hero{
+  min-height:100vh;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding:40px 20px;
+  background:linear-gradient(180deg,#f8fdff 0%,#d8f6fb 100%);
+}
+
+.container{
+  max-width:1100px;
+  margin:auto;
+  text-align:center;
+}
+
+.logo{
+  max-width:420px;
+  width:90%;
+  margin:auto;
+  display:block;
+  filter:drop-shadow(0 14px 30px rgba(0,0,0,0.2));
+}
+
+.tag{
+  margin-top:20px;
+  display:inline-block;
+  padding:8px 16px;
+  border-radius:999px;
+  background:white;
+  border:1px solid #7dd3fc;
+  font-weight:600;
+  font-size:14px;
+  color:#0369a1;
+}
+
+.lead{
+  max-width:650px;
+  margin:25px auto;
+  font-size:18px;
+  color:#334155;
+}
+
+.buttons{
+  margin-top:30px;
+  display:flex;
+  gap:15px;
+  flex-wrap:wrap;
+  justify-content:center;
+}
+
+.btn{
+  padding:16px 26px;
+  border-radius:14px;
+  font-weight:800;
+  text-decoration:none;
+  font-size:16px;
+  letter-spacing:.5px;
+  transition:.2s ease;
+}
+
+.btn-call{
+  background:#f97316;
+  color:white;
+  box-shadow:0 12px 30px rgba(249,115,22,.35);
+}
+
+.btn-email{
+  border:2px solid #0f172a;
+  color:#0f172a;
+  background:white;
+}
+
+.features{
+  margin-top:40px;
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:16px;
+}
+
+.feature{
+  background:white;
+  border-radius:14px;
+  padding:16px;
+  border:1px solid #bae6fd;
+  font-weight:700;
+  font-size:13px;
+  text-transform:uppercase;
+}
+
+.section{
+  padding:80px 20px;
+}
+
+.section-dark{
+  background:#020617;
+  color:white;
+}
+
+.section h2{
+  font-size:40px;
+  font-weight:900;
+  margin-bottom:20px;
+  text-align:center;
+}
+
+.facts{
+  max-width:1100px;
+  margin:40px auto 0 auto;
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+  gap:20px;
+}
+
+.fact{
+  background:white;
+  border:2px solid #0f172a;
+  border-radius:18px;
+  padding:24px;
+}
+
+.fact-number{
+  width:46px;
+  height:46px;
+  background:#f97316;
+  color:white;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  border-radius:10px;
+  font-weight:900;
+  margin-bottom:12px;
+}
+
+.services{
+  max-width:1100px;
+  margin:auto;
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+  gap:18px;
+}
+
+.service{
+  background:rgba(255,255,255,.05);
+  border-radius:16px;
+  padding:20px;
+  border:1px solid rgba(255,255,255,.15);
+}
+
+.cta{
+  text-align:center;
+  padding:80px 20px;
+  background:linear-gradient(180deg,#d8f6fb 0%,#f8fdff 100%);
+}
+
+.cta h2{
+  font-size:48px;
+  font-weight:900;
+  color:#f97316;
+}
+
+.cta p{
+  margin-top:15px;
+  font-size:18px;
+  color:#334155;
+}
+
+.cta .buttons{
+  margin-top:30px;
+}
+
+@media (max-width:700px){
+  .cta h2{font-size:36px}
 }
 </style>
-
 </head>
 
 <body>
 
-<img src="WCH-04.png" alt="Wheelie Clean Hygiene logo">
+<section class="hero">
+  <div class="container">
+
+    <img src="WCH-04.png" class="logo" alt="Wheelie Clean Hygiene">
+
+    <div class="tag">Serving the Highlands</div>
+
+    <p class="lead">
+      The professional way to keep your bins clean. Hygienic, compliant and mess‑free wheelie bin cleaning.
+    </p>
+
+    <div class="buttons">
+      <a class="btn btn-call" href="tel:07506898858">Call 07506 898 858</a>
+      <a class="btn btn-email" href="mailto:Mark@wheeliecleanhygiene.co.uk">Email Mark</a>
+    </div>
+
+    <div class="features">
+      <div class="feature">Deep cleaned inside and out</div>
+      <div class="feature">Safe disposal of contaminated water</div>
+      <div class="feature">Monthly maintenance available</div>
+    </div>
+
+  </div>
+</section>
+
+<section class="section">
+  <h2>Why Regular Bin Cleaning Matters</h2>
+
+  <div class="facts">
+
+    <div class="fact">
+      <div class="fact-number">1</div>
+      Food waste begins breaking down within hours, producing bacteria and odours.
+    </div>
+
+    <div class="fact">
+      <div class="fact-number">2</div>
+      Food waste can contain bacteria such as E. coli and Salmonella.
+    </div>
+
+    <div class="fact">
+      <div class="fact-number">3</div>
+      Warm and damp conditions significantly increase bacterial growth.
+    </div>
+
+    <div class="fact">
+      <div class="fact-number">4</div>
+      Unclean bins attract flies which can lay hundreds of eggs.
+    </div>
+
+    <div class="fact">
+      <div class="fact-number">5</div>
+      Strong food waste odours attract rodents.
+    </div>
+
+    <div class="fact">
+      <div class="fact-number">6</div>
+      Most households clean kitchens weekly but rarely disinfect outdoor bins.
+    </div>
+
+  </div>
+</section>
+
+<section class="section section-dark">
+
+<h2>The Professional Way To Keep Your Bins Clean</h2>
+
+<div class="services">
+
+<div class="service">State‑of‑the‑art mobile cleaning system</div>
+<div class="service">Dual water tank system preventing cross contamination</div>
+<div class="service">SEPA compliant and registered</div>
+<div class="service">Hydraulic lift system for internal & external cleaning</div>
+<div class="service">Contaminated water disposed of safely and legally</div>
+<div class="service">Monthly maintenance packages available</div>
+<div class="service">No mess left behind</div>
+
+</div>
+
+</section>
+
+<section class="cta">
+
+<h2>Book Your Clean Today</h2>
+
+<p>Friendly local service. Professional cleaning system. Fresh bins without the hassle.</p>
+
+<div class="buttons">
+<a class="btn btn-call" href="tel:07506898858">Call 07506 898 858</a>
+<a class="btn btn-email" href="mailto:Mark@wheeliecleanhygiene.co.uk">Email Mark</a>
+</div>
+
+</section>
 
 </body>
 </html>
